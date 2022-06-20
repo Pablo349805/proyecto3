@@ -1,0 +1,22 @@
+.contenedor .sidebar {
+    background: #f0c7c7;
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 5;
+   
+    flex-wrap: wrap;
+    background-repeat: no-repeat;
+    width: auto;
+    padding: auto;
+    height: 500px;
+    
+ }
+ .contenedor .sidebar2 {
+    background: #f0c7c7;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 5;
+    grid-row-end: 7;
+ 
+ }

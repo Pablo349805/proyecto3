@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./proy.css">
+</head>
+<body>
+    <div class="contenedor">
+    <header class="header">
+        <h1>REGISTRATE</h1>
+    </header>
+    <img src="./imagenes/portada lana 4.jpg" alt="">
+    <section class="formulario">
+        <form action="" metod="" enctype="">
+            <div>
+                <label for="">Nombre</label>
+                <input type="text" id="nombre" placeholder="ingrese su nombre">
+            </div> 
+            <br>
+            <div>
+                <label for="">Apellido</label>
+                <input type="text" id="Apellido" placeholder="ingrese su apellido">
+            </div>
+            <br>
+            <div>
+                <label for="">Direccion</label>
+                <input type="text" id="Direccion" placeholder="ingrese su direccion">
+            </div>
+            <br>
+            <div>
+                <label for="">Email</label>
+                <input type="email" id="email" required>
+        </div> 
+        <br>
+        <div>
+            <textarea name="comentarios" id="comentarios" cols="30" rows="5">comentarios</textarea>
+        </div>
+        <br>
+        <div>
+            <label for="">¿te gustaria aprender a tejer?</label>
+                <input type="radio" name="curso" value="1"> si
+                <input type="radio" name="curso" value="2"> no
+        </div>
+        <br>
+        <div>
+            <label for="">Envio por:</label>
+                <input type="radio" name="Envio" value="1"> Correo argentino
+                <input type="radio" name="Envio" value="2"> Cargo
+                <input type="radio" name="Envio" value="3"> Otro
+        </div>
+        <br>
+        <div>
+            <select name="provincia" id="provincia">
+                <option value="1">Buenos Aires</option>
+                <option value="2">Cordoba</option>
+                <option value="3">Chubut</option>
+                <option value="1">Mendoza</option>
+                <option value="2">San Juan</option>
+                <option value="3">San Luis</option>
+                <option value="1">Tucuman</option>
+                <option value="2">Salta</option>
+                <option value="3">Corrientes</option>
+            </select>
+        
+        </div>
+        <br>
+            <input type="submit" id="enviar ahora">
+            <input type="reset" value="borrar todo">
+
+        </form>
+    </section>
+</div>
+    
+</body>
+</html>

@@ -1,0 +1,134 @@
+
+@import "contenedor";
+@import "header";
+@import "contacto";
+@import "sidebar";
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #f0c7c7;
+    color: black;
+    font-family: sans-serif;
+}
+
+
+.contenedor > div,
+.contenedor .header,
+.contenedor .contenido,
+.contenedor .nav,
+.contenedor .sidebar,
+.contenedor .footer {
+    background: aliceblue;
+    padding: 20px;
+    border-radius: 4px;
+    background-color: bisque;
+    
+}
+
+.contenedor .contenido {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 7;
+    text-align: center;
+    align-items: center;
+    
+ }
+ .contenedor .nav {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 2;
+   
+background: #febbbb; 
+background: -moz-linear-gradient(top,  #febbbb 0%, #fe9090 45%, #ff5c5c 100%); 
+background: -webkit-linear-gradient(top,  #febbbb 0%,#fe9090 45%,#ff5c5c 100%); 
+background: linear-gradient(to bottom,  #febbbb 0%,#fe9090 45%,#ff5c5c 100%); 
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#febbbb', endColorstr='#ff5c5c',GradientType=0 ); 
+
+ }
+ ul {
+     list-style: none;
+     margin: 0;
+     padding: 0;
+ }
+ li {
+     float: left;
+ }
+ a {
+     color: black;
+     text-decoration: none;
+     display: block;
+     padding: 12px 86px;
+     font-size: 18px;
+ }
+ .barra {
+     color: darkred;
+     padding: 15px;
+ }
+
+.contenedor .footer {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 7;
+    grid-row-end: 8;
+    text-align: center;
+    background-color: rgb(141, 137, 137);
+}
+
+.caja {
+    display: grid;
+    
+}
+    
+
+
+.contenedor .formulario {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 7;
+    text-align: center;
+}
+.contenedor img {
+    width: 100%;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+
+
+@media all and (max-width: 600px){
+    .contenedor {
+        width: 90%;
+        max-width: 600px;
+        margin: 10px auto;
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat (4,1fr);
+        grid-template-rows: repeat (8, auto);
+    }
+    .contenedor > div,
+    .contenedor .header,
+    .contenedor .contenido,
+    .contenedor .nav,
+    .contenedor .sidebar,
+    .contenedor .footer {
+        margin: 0%;
+
+    
+}
+.contenedor .nav {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    
+}
+
+
+}
